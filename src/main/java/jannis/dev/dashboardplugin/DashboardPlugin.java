@@ -6,8 +6,6 @@ import jannis.dev.dashboardplugin.listeners.QuitListener;
 import jannis.dev.dashboardplugin.scoreboard.StatsScoreboard;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
-import org.bukkit.event.Listener;
-import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 

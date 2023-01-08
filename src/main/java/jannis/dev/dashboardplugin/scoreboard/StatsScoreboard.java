@@ -9,10 +9,12 @@ import org.bukkit.scoreboard.Objective;
 import org.bukkit.scoreboard.Scoreboard;
 import org.bukkit.scoreboard.Team;
 
+import java.util.Objects;
+
 public class StatsScoreboard {
     public void setScoreboard(Player player) {
 
-        Scoreboard scoreboard = Bukkit.getScoreboardManager().getNewScoreboard();
+        Scoreboard scoreboard = Objects.requireNonNull(Bukkit.getScoreboardManager()).getNewScoreboard();
         Objective obj = scoreboard.registerNewObjective("stats", "dummy", "stats");
         obj.setDisplaySlot(DisplaySlot.SIDEBAR);
         obj.setDisplayName(ChatColor.AQUA.toString() + ChatColor.UNDERLINE + "  9d Gang Server  ");
@@ -56,6 +58,10 @@ public class StatsScoreboard {
         Team deaths = scoreboard.getTeam("deaths");
         Team playerKills = scoreboard.getTeam("playerKills");
         Team mobKills = scoreboard.getTeam("mobKills");
+
+        if(deaths == null || playerKills == null || mobKills == null){
+            return;
+        }
 
         deaths.setPrefix(ChatColor.GRAY + playerDeaths);
         playerKills.setPrefix(ChatColor.GRAY + playerPlayerKills);
