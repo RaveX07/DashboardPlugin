@@ -1,0 +1,5 @@
+name: DashboardPlugin
+version: '${project.version}'
+main: jannis.dev.dashboardplugin.DashboardPlugin
+api-version: 1.19
+description: A simple Dashboard for your Minecraft Server 
