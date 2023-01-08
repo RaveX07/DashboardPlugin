@@ -29,7 +29,7 @@ public class StatsScoreboard {
 
         obj.getScore(ChatColor.RED + "Deaths: ").setScore(7);
         obj.getScore(ChatColor.RED.toString()).setScore(6);
-        obj.getScore(ChatColor.AQUA.toString()).setScore(5);
+        obj.getScore(ChatColor.DARK_AQUA.toString()).setScore(5);
         obj.getScore(ChatColor.LIGHT_PURPLE + "Player Kills:").setScore(4);
         obj.getScore(ChatColor.LIGHT_PURPLE.toString()).setScore(3);
         obj.getScore(ChatColor.AQUA.toString()).setScore(2);
